@@ -62,7 +62,7 @@ html[is-docs-page] body {
 @media (max-width: 768px) {
   .DocsPage {
     --docs-header-height: 3rem;
-    padding-top: var(--docs-header-height);
+    /* padding-top: var(--docs-header-height); */
   }
 
   html[is-docs-page][is-mobile-sidebar-open] {

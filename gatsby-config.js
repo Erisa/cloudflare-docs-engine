@@ -152,8 +152,8 @@ module.exports = {
         start_url: "/",
         background_color: "#f38020",
         theme_color: "#f38020",
-        display: "minimal-ui",
-        icon: "src/images/cloudflare-icon.png"
+        display: "minimal-ui"
+        // icon: "src/images/cloudflare-icon.png"
       }
     },
     // Consider enabling for PWA + offline functionality

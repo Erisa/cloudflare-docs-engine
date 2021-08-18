@@ -12,7 +12,6 @@ import BrowserResizeTracking from "./browser-resize-tracking"
 import SmoothScrollHashChanges from "./smooth-scroll-hash-changes"
 import Breadcrumbs from "./breadcrumbs"
 
-import DocsMobileHeader from "./docs-mobile-header"
 import DocsMobileTitleHeader from "./docs-mobile-title-header"
 import DocsSidebar from "./docs-sidebar"
 import DocsToolbar from "./docs-toolbar"
@@ -50,11 +49,10 @@ const DocsPage = ({ pageContext: page, children, location }) => {
       <SkipNavLink contentId="docs-content" className="SkipNavLink"/>
 
       <div className="DocsPage">
-        <DocsMobileHeader/>
+        {/* <DocsMobileHeader/> */}
         <DocsMobileTitleHeader/>
         <div className="DocsMobileNavBackdrop"/>
         <DocsSidebar/>
-        <DocsToolbar/>
 
         <main className="DocsBody">
           {pageType === "document" && tableOfContents && (
@@ -67,6 +65,8 @@ const DocsPage = ({ pageContext: page, children, location }) => {
               </div>
             </div>
           )}
+
+        <DocsToolbar/>
 
           <SkipNavContent id="docs-content"/>
 
